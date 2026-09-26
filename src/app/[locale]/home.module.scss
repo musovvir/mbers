@@ -1,0 +1,86 @@
+.hero {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+  width: min(100%, var(--page-width));
+  margin-inline: auto;
+  padding: calc(var(--header-height) + 28px) var(--gutter) 24px;
+}
+
+.copy {
+  max-width: 640px;
+}
+
+.copy h1 {
+  max-width: none;
+  font-size: clamp(28px, 7.2vw, 42px);
+  white-space: pre-line;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.headingRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.stages {
+  display: grid;
+  gap: 0;
+  margin: 32px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-divider);
+}
+
+.stages li {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.stages span {
+  color: var(--color-faint);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.stages h3 {
+  font-size: 20px;
+}
+
+.stages p {
+  margin-top: 8px;
+  color: var(--color-muted);
+}
+
+.form {
+  margin-top: 28px;
+}
+
+@media (min-width: 960px) {
+  .hero {
+    grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.62fr);
+    min-height: calc(100vh - 40px);
+  }
+
+  .copy {
+    max-width: none;
+    container-type: inline-size;
+  }
+
+  .copy h1 {
+    font-size: min(44px, 5.5cqw);
+  }
+}

@@ -1,0 +1,31 @@
+.nav {
+  margin-bottom: 28px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  list-style: none;
+  color: var(--color-faint);
+  font-size: 13px;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item:not(:last-child)::after {
+  content: "/";
+  margin-inline: 8px;
+  opacity: 0.7;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: var(--color-text);
+}

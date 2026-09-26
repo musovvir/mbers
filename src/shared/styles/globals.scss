@@ -1,0 +1,134 @@
+:root {
+  color-scheme: light;
+  --color-bg: #ebedf1;
+  --color-surface: #fafbfc;
+  --color-text: #1a1d25;
+  --color-divider: rgba(26, 29, 37, 0.14);
+  --color-muted: #4b4f5c;
+  --color-faint: #6a6f7e;
+  --color-accent: #414b5a;
+  --color-action: #456682;
+  --color-action-text: #eef0f3;
+  --color-section: #e4e7ec;
+  --color-band: linear-gradient(160deg, #e4e7ec, #d7dbe3 52%, #c7ccd6);
+  --color-hero: linear-gradient(160deg, #c3d3e8, #d7dbe3 55%, #ebedf1);
+  --shadow: 0 18px 50px rgba(26, 29, 37, 0.06);
+  --header-height: 96px;
+  --page-width: 1180px;
+  --gutter: clamp(20px, 4vw, 80px);
+  --radius: 8px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #15171c;
+  --color-surface: #23262e;
+  --color-text: #ecedf1;
+  --color-divider: rgba(236, 237, 241, 0.16);
+  --color-muted: #c6c9d2;
+  --color-faint: #9698a4;
+  --color-accent: #a2abb9;
+  --color-action: #8eb4d4;
+  --color-action-text: #15171c;
+  --color-section: #232935;
+  --color-band: linear-gradient(160deg, #232935, #2b2f38 60%, #15171c);
+  --color-hero: linear-gradient(160deg, #232935, #2b2f38 60%, #15171c);
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-arabic), var(--font-inter), sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-action);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-action) 28%, transparent);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --header-height: 76px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "Nav": {
+    "services": "Services",
+    "about": "About us",
+    "blog": "Blog",
+    "cases": "Cases",
+    "contacts": "Contacts",
+    "discuss": "Discuss the project",
+    "seo": "SEO",
+    "aiSeo": "AI SEO",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "primary": "Primary",
+    "language": "Language"
+  },
+  "Theme": {
+    "toggle": "Toggle theme"
+  },
+  "Footer": {
+    "summary": "Digital consulting: we find the business problem, choose SEO or AI SEO, and carry the work through.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "faq": "FAQ",
+    "rights": "All rights reserved."
+  },
+  "Common": {
+    "read": "Read",
+    "minutes": "{count} min",
+    "allServices": "All services",
+    "learnMore": "Learn more",
+    "home": "Home",
+    "related": "Related",
+    "published": "Published",
+    "problem": "Problem",
+    "work": "Work",
+    "result": "Result",
+    "pendingEmail": "hello@example.com — pending",
+    "pendingPhone": "Phone — pending",
+    "pendingAddress": "Address — added once the legal entity is registered"
+  },
+  "Form": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "What is not working",
+    "submit": "Send",
+    "sending": "Sending…",
+    "success": "Received. We'll reply to the email you left.",
+    "errorValidation": "Check the fields and try again.",
+    "errorDelivery": "We couldn't send this yet. Write to hello@example.com.",
+    "honeypot": "Company website",
+    "phoneOptional": "Optional",
+    "nameRequired": "Enter your name.",
+    "nameLong": "Use a shorter name.",
+    "emailRequired": "Enter an email.",
+    "emailInvalid": "Enter a valid email.",
+    "messageShort": "Add a few sentences about the problem.",
+    "messageLong": "Shorten the message.",
+    "phoneLong": "Use a shorter phone number."
+  },
+  "NotFound": {
+    "title": "This page is not here",
+    "text": "The address may have changed. The work we do is still on the site.",
+    "home": "Back to the main page"
+  },
+  "ErrorPage": {
+    "title": "Something broke while loading this page",
+    "text": "Try again. If it keeps happening, write to us from the contact page.",
+    "retry": "Try again"
+  },
+  "A11y": {
+    "breadcrumb": "Breadcrumb",
+    "faq": "Questions"
+  }
+}
