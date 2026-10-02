@@ -5,6 +5,15 @@ export type HomeContent = {
   metaDescription: string;
   title: string;
   lead: string;
+  place: string;
+  globeWorld: string;
+  globeInbound: string;
+  globeApproach: string;
+  globeDubai: string;
+  globeMark: string;
+  cityTitle: string;
+  citySub: string;
+  scrollCue: string;
   approachEyebrow: string;
   approachTitle: string;
   approachText: string;
@@ -34,6 +43,15 @@ const home: Record<AppLocale, HomeContent> = {
       "We identify the business problem, then do the SEO and AI SEO that makes a company findable in search and citable by AI assistants.",
     title: "So a company is found in search\nand cited in assistant answers",
     lead: "First we look at where the business is lost, then do SEO, AI SEO, or both.",
+    place: "Based in Dubai, UAE — we work worldwide.",
+    globeWorld: "Worldwide",
+    globeInbound: "Inbound",
+    globeApproach: "Approaching",
+    globeDubai: "Dubai, UAE",
+    globeMark: "UAE",
+    cityTitle: "Open to the whole world",
+    citySub: "Based in Dubai, UAE",
+    scrollCue: "Scroll",
     approachEyebrow: "How we think",
     approachTitle: "You might not know what you need — that's fine.",
     approachText:
@@ -134,6 +152,15 @@ const home: Record<AppLocale, HomeContent> = {
       "Находим бизнес-проблему, затем делаем SEO и AI SEO, чтобы компанию находили в поиске и цитировали ИИ-ассистенты.",
     title: "Чтобы компанию находили в поиске\nи цитировали в ответах ассистентов",
     lead: "Сначала смотрим, где бизнес теряют, и делаем SEO, AI SEO или оба.",
+    place: "Базируемся в Дубае, ОАЭ — работаем по всему миру.",
+    globeWorld: "Весь мир",
+    globeInbound: "Входящие",
+    globeApproach: "Приближение",
+    globeDubai: "Дубай, ОАЭ",
+    globeMark: "ОАЭ",
+    cityTitle: "Открыты для всего мира",
+    citySub: "Мы в Дубае, ОАЭ",
+    scrollCue: "Листайте",
     approachEyebrow: "Как мы мыслим",
     approachTitle: "Вы можете не знать, что вам нужно. Это нормально.",
     approachText:
@@ -234,6 +261,15 @@ const home: Record<AppLocale, HomeContent> = {
       "نحدد مشكلة العمل، ثم ننفذ SEO وAI SEO حتى تجد محركات البحث الشركة وتقتبسها مساعدات الذكاء الاصطناعي.",
     title: "حتى يُعثر على الشركة في البحث\nويُقتبس عنها في إجابات المساعدين",
     lead: "ننظر أولًا أين يُفقد العمل، ثم ننفذ SEO أو AI SEO أو الاثنين.",
+    place: "مقرّنا في دبي، الإمارات — نعمل حول العالم.",
+    globeWorld: "حول العالم",
+    globeInbound: "واردة",
+    globeApproach: "اقتراب",
+    globeDubai: "دبي، الإمارات",
+    globeMark: "الإمارات",
+    cityTitle: "منفتحون على العالم",
+    citySub: "مقرّنا في دبي، الإمارات",
+    scrollCue: "مرّر",
     approachEyebrow: "كيف نفكر",
     approachTitle: "قد لا تعرف ما الذي تحتاجه. هذا طبيعي.",
     approachText:

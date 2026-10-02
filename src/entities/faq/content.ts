@@ -30,7 +30,7 @@ const faqs: Record<AppLocale, FaqItem[]> = {
       id: "markets",
       question: "Do you work with clients in any market?",
       answer:
-        "Yes. The work is remote. What matters is the market the pages have to win, not where the client sits.",
+        "Yes. We are based in Dubai, UAE, and work with clients worldwide. The work is remote. What matters is the market the pages have to win, not where the client sits.",
     },
     {
       id: "start",
@@ -92,7 +92,7 @@ const faqs: Record<AppLocale, FaqItem[]> = {
       id: "markets",
       question: "Работаете ли вы с клиентами на любом рынке?",
       answer:
-        "Да. Работа удалённая. Важен рынок, который нужно выиграть страницами, а не то, где сидит клиент.",
+        "Да. Базируемся в Дубае, ОАЭ, и работаем с клиентами по всему миру. Работа удалённая. Важен рынок, который нужно выиграть страницами, а не то, где сидит клиент.",
     },
     {
       id: "start",
@@ -154,7 +154,7 @@ const faqs: Record<AppLocale, FaqItem[]> = {
       id: "markets",
       question: "هل تعملون مع عملاء في أي سوق؟",
       answer:
-        "نعم. العمل عن بُعد. المهم هو السوق الذي يجب أن تربحه الصفحات، لا مكان جلوس العميل.",
+        "نعم. مقرّنا في دبي، الإمارات، ونعمل مع العملاء حول العالم. العمل عن بُعد. المهم هو السوق الذي يجب أن تربحه الصفحات، لا مكان جلوس العميل.",
     },
     {
       id: "start",

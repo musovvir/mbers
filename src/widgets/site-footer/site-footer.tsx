@@ -14,6 +14,7 @@ export async function SiteFooter() {
         <div>
           <p className={styles.name}>{site.name}</p>
           <p className={styles.summary}>{t("summary")}</p>
+          <p className={styles.place}>{t("place")}</p>
         </div>
         <nav aria-label={t("services")}>
           <p className={styles.label}>{t("services")}</p>

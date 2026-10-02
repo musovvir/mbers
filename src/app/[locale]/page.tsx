@@ -9,7 +9,7 @@ import { JsonLd } from "@/shared/seo/json-ld";
 import { faqJsonLd } from "@/shared/seo/schema";
 import { Button } from "@/shared/ui/button/button";
 import { FaqList } from "@/shared/ui/faq-list/faq-list";
-import { WireGlobe } from "@/shared/ui/wire-globe/wire-globe";
+import { HeroGlobe } from "@/features/hero-globe/hero-globe";
 import { ContactForm } from "@/features/contact/contact-form";
 import { Link } from "@/i18n/navigation";
 import layout from "@/shared/styles/layout.module.scss";
@@ -48,13 +48,14 @@ export default async function HomePage({ params }: PageProps) {
       <JsonLd data={{ "@context": "https://schema.org", ...faqJsonLd(faqs) }} />
       <section className={styles.hero}>
         <div className={styles.copy}>
+          <p className={styles.place}>{home.place}</p>
           <h1 className={layout.display}>{home.title}</h1>
           <p className={layout.lead}>{home.lead}</p>
           <div className={styles.actions}>
             <Button href="/contact">{nav("discuss")}</Button>
           </div>
         </div>
-        <WireGlobe />
+        <HeroGlobe markerLabel={home.globeMark} caption={home.globeDubai} />
       </section>
 
       <section className={layout.section}>

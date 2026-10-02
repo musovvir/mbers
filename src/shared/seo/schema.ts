@@ -15,7 +15,12 @@ export function organizationJsonLd() {
     email: site.contactEmail,
     logo: `${site.url}/brand/logo-dark.png`,
     description:
-      "Digital consulting for SEO and AI SEO. We find the business problem, choose the search work that answers it, and carry it through.",
+      "Digital consulting for SEO and AI SEO, based in Dubai and working worldwide. We find the business problem, choose the search work that answers it, and carry it through.",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Dubai",
+      addressCountry: "AE",
+    },
     areaServed: "Worldwide",
     knowsLanguage: ["en", "ru", "ar"],
   };
