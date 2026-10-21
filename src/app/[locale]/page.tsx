@@ -11,6 +11,7 @@ import { Button } from "@/shared/ui/button/button";
 import { FaqList } from "@/shared/ui/faq-list/faq-list";
 import { HeroGlobe } from "@/features/hero-globe/hero-globe";
 import { ContactForm } from "@/features/contact/contact-form";
+import { StagesScheme } from "@/widgets/stages-scheme/stages-scheme";
 import { Link } from "@/i18n/navigation";
 import layout from "@/shared/styles/layout.module.scss";
 import styles from "./home.module.scss";
@@ -132,17 +133,13 @@ export default async function HomePage({ params }: PageProps) {
         <div className={layout.sectionInner}>
           <p className={layout.kicker}>{home.processEyebrow}</p>
           <h2 className={layout.title}>{home.processTitle}</h2>
-          <ol className={styles.stages}>
-            {home.stages.map((stage, index) => (
-              <li key={stage.title}>
-                <span>0{index + 1}</span>
-                <div>
-                  <h3>{stage.title}</h3>
-                  <p>{stage.text}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+          <StagesScheme
+            stages={home.stages}
+            toolLinks={[
+              { href: "/seo", label: nav("seo") },
+              { href: "/ai-seo", label: nav("aiSeo") },
+            ]}
+          />
         </div>
       </section>
 
