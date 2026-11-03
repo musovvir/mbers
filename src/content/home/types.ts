@@ -4,14 +4,8 @@ export type HomeContent = {
   title: string;
   lead: string;
   place: string;
-  globeWorld: string;
-  globeInbound: string;
-  globeApproach: string;
   globeDubai: string;
   globeMark: string;
-  cityTitle: string;
-  citySub: string;
-  scrollCue: string;
   approachEyebrow: string;
   approachTitle: string;
   approachText: string;
