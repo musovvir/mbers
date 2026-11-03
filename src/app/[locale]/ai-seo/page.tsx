@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getPageLocale } from "@/shared/i18n/page-locale";
-import { getService } from "@/entities/service/content";
+import { getService } from "@/content/services";
 import { pageMetadata } from "@/shared/seo/metadata";
 import { ServiceView } from "@/widgets/service-view/service-view";
 

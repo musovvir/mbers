@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getPageLocale } from "@/shared/i18n/page-locale";
-import { getListing } from "@/entities/pages/listings";
+import { getListing } from "@/content/listings";
 import { ContactForm } from "@/features/contact/contact-form";
 import { pageMetadata } from "@/shared/seo/metadata";
 import { JsonLd } from "@/shared/seo/json-ld";
@@ -61,6 +61,7 @@ export default async function ContactPage({ params }: PageProps) {
           <div>
             <h1 className={layout.display}>{page.title}</h1>
             <p className={layout.lead}>{page.lead}</p>
+            {/* TODO(real-data): phone + address once registered; email via site.contactEmail / Common.pending*. */}
             <ul className={styles.pending}>
               <li>
                 <a href={`mailto:${site.contactEmail}`}>{common("pendingEmail")}</a>

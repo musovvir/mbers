@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getPageLocale } from "@/shared/i18n/page-locale";
-import { getListing } from "@/entities/pages/listings";
-import { getServices } from "@/entities/service/content";
+import { getListing } from "@/content/listings";
+import { getServices } from "@/content/services";
 import { pageMetadata } from "@/shared/seo/metadata";
 import { JsonLd } from "@/shared/seo/json-ld";
 import { breadcrumbJsonLd } from "@/shared/seo/schema";

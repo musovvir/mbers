@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
-import { getArticleSlugs } from "@/entities/article/content";
-import { getCaseSlugs } from "@/entities/case-study/content";
+import { getArticleSlugs } from "@/content/articles";
+import { getCaseSlugs } from "@/content/cases";
 import { absoluteUrl } from "@/shared/seo/urls";
 
 const staticPaths = [

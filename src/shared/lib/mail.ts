@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 import type { LeadInput } from "@/shared/lib/lead";
 
 export async function sendLeadEmail(lead: LeadInput) {
+  // TODO(real-data): set SMTP_* and CONTACT_TO_EMAIL in the deployment env (see .env.example).
   const host = process.env.SMTP_HOST;
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;

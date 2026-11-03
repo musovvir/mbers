@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getFormatter, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { getPageLocale } from "@/shared/i18n/page-locale";
-import { getArticle, getArticles, getArticleSlugs } from "@/entities/article/content";
+import { getArticle, getArticles, getArticleSlugs } from "@/content/articles";
 import { pageMetadata } from "@/shared/seo/metadata";
 import { JsonLd } from "@/shared/seo/json-ld";
 import { absoluteUrl } from "@/shared/seo/urls";

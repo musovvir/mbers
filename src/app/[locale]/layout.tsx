@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import Script from "next/script";
 import { Inter, Noto_Sans_Arabic } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
@@ -9,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import { site } from "@/shared/config/site";
 import { JsonLd } from "@/shared/seo/json-ld";
 import { organizationJsonLd, websiteJsonLd } from "@/shared/seo/schema";
+import { ThemeInitScript } from "@/features/theme/theme-init-script";
 import { ThemeSync } from "@/features/theme/theme-sync";
 import { SiteFooter } from "@/widgets/site-footer/site-footer";
 import { SiteHeader } from "@/widgets/site-header/site-header";
@@ -25,8 +25,6 @@ const arabic = Noto_Sans_Arabic({
   display: "swap",
   variable: "--font-arabic",
 });
-
-const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t='light'}document.documentElement.setAttribute('data-theme',t)}catch(e){document.documentElement.setAttribute('data-theme','light')}})();`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -69,11 +67,11 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
+      <head>
+        <ThemeInitScript />
+      </head>
       <body>
         <ThemeSync />
-        <Script id="theme-init" strategy="beforeInteractive">
-          {themeScript}
-        </Script>
         <JsonLd
           data={{
             "@context": "https://schema.org",

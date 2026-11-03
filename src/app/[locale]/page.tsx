@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getPageLocale } from "@/shared/i18n/page-locale";
-import { getHome } from "@/entities/home/content";
-import { getCases } from "@/entities/case-study/content";
-import { getFaqs } from "@/entities/faq/content";
+import { getHome } from "@/content/home";
+import { getCases } from "@/content/cases";
+import { getFaqs } from "@/content/faq";
 import { pageMetadata } from "@/shared/seo/metadata";
 import { JsonLd } from "@/shared/seo/json-ld";
 import { faqJsonLd } from "@/shared/seo/schema";

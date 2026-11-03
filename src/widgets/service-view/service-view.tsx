@@ -1,9 +1,9 @@
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { AppLocale } from "@/i18n/routing";
-import { getFaqs } from "@/entities/faq/content";
-import { getArticles } from "@/entities/article/content";
-import { getService, type ServiceSlug } from "@/entities/service/content";
+import { getFaqs } from "@/content/faq";
+import { getArticles } from "@/content/articles";
+import { getService, type ServiceSlug } from "@/content/services";
 import { Link } from "@/i18n/navigation";
 import { JsonLd } from "@/shared/seo/json-ld";
 import { breadcrumbJsonLd, faqJsonLd, serviceJsonLd } from "@/shared/seo/schema";

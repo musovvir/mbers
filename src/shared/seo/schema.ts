@@ -12,10 +12,12 @@ export function organizationJsonLd() {
     "@id": organizationId(),
     name: site.name,
     url: site.url,
+    // TODO(real-data): follows site.contactEmail — update when the real inbox is set.
     email: site.contactEmail,
     logo: `${site.url}/brand/logo-dark.png`,
     description:
       "Digital consulting for SEO and AI SEO, based in Dubai and working worldwide. We find the business problem, choose the search work that answers it, and carry it through.",
+    // TODO(real-data): replace with the registered legal address when the entity exists.
     address: {
       "@type": "PostalAddress",
       addressLocality: "Dubai",

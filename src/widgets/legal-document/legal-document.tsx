@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { getPageLocale } from "@/shared/i18n/page-locale";
-import { getLegalPage, type LegalSlug } from "@/entities/legal/content";
+import { getLegalPage, type LegalSlug } from "@/content/legal";
 import { pageMetadata } from "@/shared/seo/metadata";
 import { JsonLd } from "@/shared/seo/json-ld";
 import { breadcrumbJsonLd } from "@/shared/seo/schema";
